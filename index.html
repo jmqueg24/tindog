@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tindog Joshua</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- CSS only
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+</head>
+<style>
+    :root{
+        --primary-color: #ff4c69;
+        --tinder-1: #FD297B;
+        --tinder-2: #FF5864;
+        --tinder-3: #FF655B;
+        --secondary-color: #ffffff;
+        --text-primary:#000000;
+
+        --content-padding: 10% 0;
+    }
+    #credits{
+        font-size: 18px;
+    }
+    body{
+        width: 100%;
+        background-image: linear-gradient(to right, #FD297B , #FF5864, #FF655B);;
+        color: var(--secondary-color);
+    }
+
+    .navbar-brand{
+        font-weight: 700;
+        color: var(--secondary-color);
+    }
+
+    .hero__img{
+        width: 60%;
+        transform: rotate(25deg);
+        position: relative;
+        left: 30%;
+        top: 25%;
+    }
+
+    .hero__title{
+        font-size: 56px;
+        font-weight: 900;
+    }
+
+    .CTA{
+        font-size: 45px;
+        font-weight: 900;
+    }
+    
+
+    .icons {
+    font-size: 20px;
+    padding: 10px;
+    padding-bottom: 30px;
+    }
+
+    .carousel img{
+        padding: 1%;
+    }
+
+    .card{
+        margin-top: 10%;
+
+    }
+
+    #footer{
+        padding: 3% !important;
+    }
+
+    #footer a{
+        color: black;
+    }
+
+    .navbar a{
+        color: white;
+    }
+    /* media query for title page */
+    @media (max-width: 1028px) {
+        body {
+            text-align: center;
+        }
+
+        .hero__img{
+        position: static;
+        transform: rotate(0);
+        width: 70%;
+        margin-top: 10%;    }
+    }
+
+    /* feature section */
+    .plain-section{
+        background-color: var(--secondary-color);
+        color: var(--text-primary);
+    }
+
+    .colored-section, .plain-section{
+        padding: var(--content-padding);
+    }
+
+    #feature {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+    }
+</style>
+
+
+<body>
+ 
+
+    <nav class="navbar navbar-expand-lg mt-3">
+        <div class="container">
+          <a class="navbar-brand" href="#"><i class="fa-sharp fa-solid fa-fire"></i> tindog</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Download</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Hello World -->
+
+<!-- Hero Section  -->
+<section id="hero" class="colored-section mt-1">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-12 col-md-6">
+                <h1 class="hero__title mb-5">Meet new and interesting dogs nearby</h1>
+                <button class="btn btn-lg btn-dark"><i class="fa-brands fa-apple"></i> Download</button>
+                <button class="btn btn-outline-dark btn-lg"><i class="fa-brands fa-google-play"></i> Download</button>
+            </div>
+            <div class="col-12 col-md-6">
+                <img class="img-fluid hero__img" src="./images/iphone6.png" alt="Hero Image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="feature" class="plain-section">
+    <div class="container">
+        <div class="row">
+            <div class="feature-box col-lg-4">
+                <i class="fa-solid fa-circle-check fa-4x text-danger"></i>
+                <h3 class="feature-section__title">Easy to use</h3>
+                <p>So easy to use, even your dog could do it</p>
+
+            </div>
+            <div class="feature-box col-lg-4">
+                <i class="fa-solid fa-bullseye fa-4x text-danger"></i>
+                <h3 class="feature-section__title">Elite Service</h3>
+                <p>So easy to use, even your dog could do it</p>
+
+            </div>
+            <div class="feature-box col-lg-4">
+                <i class="fa-solid fa-heart fa-4x text-danger"></i>
+                <h3 class="feature-section__title">Easy to use</h3>
+                <p>So easy to use, even your dog could do it</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CAROUSEL SECTION -->
+<section id="carousel" class="colored-section">
+    <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+        
+        <div class="carousel-inner">
+            <div class="carousel-item active text-center">
+                <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+                <img class="testimonial__image rounded-circle w-5" src="./images/lady-img.jpg" alt="First slide"width="10%" height="10%">             
+                <em>-Maria Clara</em>
+            </div>
+
+            <div class="carousel-item text-center">
+                <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+                <img class="testimonial__image rounded-circle w-5" src="./images/dog-img.jpg" alt="First slide"width="10%" height="10%">
+                <em>-Doggy</em>
+            </div>
+    
+
+            <div class="carousel-item text-center">
+                <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+                <img class="testimonial__image rounded-circle w-5" src="./images/lady-img.jpg" alt="First slide"width="10%" height="10%">
+                <em>-Ada Lovelace</em>
+            </div>
+          
+            <!--Next & Prev Button -->
+            <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+<section id="press" class="press-section text-center" >
+    <img src="./images/TechCrunch.png" alt="TC" class="press__logo p-2" width="10%" height="10%">
+    <img src="./images/tnw.png" alt="TNW" class="press__logo p-2" width="10%" height="10%">
+    <img src="./images/bizinsider.png" alt="BI" class="press__logo p-2" width="10%" height="10%">
+    <img src="./images/mashable.png" alt="MSH" class="press__logo p-2" width="10%" height="10%">
+</section>
+</section>
+
+<section id="pricing" class="plain-section text-center">
+    <h2 class="pricing__title">A plan for every dog's needs</h2>
+    <p class="pricing__text">Simple and affordale price plans for you and your dog.</p>
+    <!-- price cards -->
+    <div class="row">
+        <div class="pricing__column col-lg-4 col-md-6">
+            <!-- Pricing Card 1 -->
+            <div class="card">
+                <div class="card-header">
+                    <h5>Chihuahua</h5>       
+                </div>
+
+                <div class="card-body">
+                    <h3 class="price-text"><strong>Free</strong></h3>
+                    <p class="card-text">5 Matches Per Day</p>
+                    <p class="card-text">10 Messages Per Day</p>
+                    <p class="card-text">Unlimited App Usage</p>
+                    <a href="#" class="btn btn-block btn btn-outline-dark btn-lg">Sign Up</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="pricing__column col-lg-4 col-md-6">
+            <!-- Pricing Card 2 -->
+            <div class="card">
+                <div class="card-header">
+                    <h5>Labrador</h5>       
+                </div>
+
+                <div class="card-body">
+                    <h3 class="price-text"><strong>49$</strong></h3>
+                    <p class="card-text">Unlimited Matches</p>
+                    <p class="card-text">Unlimited Messages</p>
+                    <p class="card-text">Unlimited App Usage</p>
+                    <a href="#" class="btn btn-lg btn-dark btn-block">Sign Up</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="pricing__column col-lg-4 col-md-6">
+            <!-- Pricing Card 3 -->
+            <div class="card">
+                <div class="card-header">
+                    <h5>Mastiff</h5>       
+                </div>
+
+                <div class="card-body">
+                    <h3 class="price-text"><strong>99$ / mo</strong></h3>
+                    <p class="card-text">Priority Listing</p>
+                    <p class="card-text">Unlimited Matches</p>
+                    <p class="card-text">Unlimited Messages</p>
+                    <p class="card-text">Unlimited App Usage</p>
+                    <a href="#" class="btn btn-lg btn-dark btn-block">Sign Up</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+<section id="CTA" class="colored-section text-center">
+    <h1 class="CTA mb-5">Find the True Love of Your Dog's Life Today.</h1>
+    <button class="btn btn-lg btn-dark"><i class="fa-brands fa-apple"></i> Download</button>
+    <button class="btn btn-outline-dark btn-lg"><i class="fa-brands fa-google-play"></i> Download</button>
+    
+</section>
+
+<footer>
+    <section id="footer" class="icons plain-section text-center">
+        <a href="twitter.com" target="_blank"><i class="icons fa-brands fa-twitter"></i></a>
+        <a href="your link here" target="_blank">  <i class="icons fa-brands fa-facebook"></i></a>
+        <a href="your link here" target="_blank"> <i class="icons fa-brands fa-instagram"></i></a>
+        <a href="your link here" target="_blank"> <i class="icons fa-solid fa-envelope"></i></a>    
+        <p id="credits">© Copyright 2022 TinDog | Joshua Maxinne Queg, Web Developer.</p>    
+    </section>
+</footer>
+    
+</body>
+</html>
